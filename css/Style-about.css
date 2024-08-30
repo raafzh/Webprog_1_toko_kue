@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-decoration: none;
+}
+/*Navigation */
+.logo{
+    
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0px auto;
+}
+
+.logo:hover{
+  transform: scale(1.2);
+  /* color: rgb(173, 96, 1);
+  text-shadow: 0 0 2px rgba(255, 172, 70, 0.678), 0 0 5px rgba(250, 172, 77, 0.897); */
+  transition: .4s ease-in;
+}
+
+header.sticky .nav-link li a{
+    color: white;
+}
+
+header.sticky .nav-link li a:hover{
+    color: #cc9900;
+}     
+  
+  
+nav{
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;  
+}
+  
+.nav-link li{
+    /* margin-left: 25%;
+    margin-right: 25%; */
+    /* display: flex; */
+    margin: 25px 30px;
+    display: inline-block;
+    text-align: center;
+}
+  
+.nav-link li a {
+    display: block;
+    color: rgb(223, 154, 71);
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    /* margin-left: 5%; */
+    /* margin: 0 1.5rem 0 1.5rem; */
+}
+  
+.nav-link li a:hover{
+    background: linear-gradient(to right, black 0%, rgb(173, 96, 1) 100%);
+}
+  
+.nav-link li a.active{
+    background: linear-gradient(to right, black 0%, rgb(173, 96, 1) 100%);
+}
+  
+/*tutup navigation*/
+  
+/*wrapper*/
+.wrapper{
+    width:100%;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+/*row*/
+.row{
+    width:100%;
+    height: auto;
+    /* padding:50px 100px; */
+    padding: 25px 50px;
+    background-color: rgba(223, 164, 91, 0.685);
+}
+
+/* our team section */
+
+.team-section{
+    width: 100%;
+    margin-bottom: 6%;
+}
+
+.team-section .container{
+    width: 80%;
+    margin: auto;
+}
+
+.team-section .container .row1{
+    width: 60%;
+    margin: auto;
+}
+
+.team-section .container .row1 .title{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-section .container .row1 .title h1{
+    font-size: 35px;
+    font-family: cursive;
+    letter-spacing: 1.5px;
+    /* color */
+}
+
+.team-section .container .row1 .title p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    /* color */
+}
+
+.team-section .container .team-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    grid-gap: 40px;
+    margin-top: 30px;
+}
+
+.team-section .container .team-card .card{
+    width: 100%;
+    background-color: #fafafa;
+    /* display: flex; */
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.team-section .container .team-card .card:hover{
+    background-color: #f0cd98;
+    transition: 0.3s;
+}
+
+.team-section .container .team-card .card .teampict-section img{
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.team-section .container .team-card .card .team-content h3, h4, p{
+    margin:10px 0 10px 0;
+    font-family: sans-serif;
+}
+
+/*image-section menyesuaikan gambar*/
+.image-section{
+    width:50%;
+    height: 100%;
+}
+
+.image-section img{
+    width:100%;
+    height: 100%;
+    position: relative;
+    border-radius: 30px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+/*tutup image section*/
+.content{
+    width:50%;
+    float: left;
+    margin-left: 50px;
+}
+.content h1{
+    font-size: 3rem;
+    font-family: cursive;
+    letter-spacing: 3.5px;
+    text-align: center;
+    margin-top: 25px;
+    color:#222
+}
+.content h2{
+    font-style: 40px;
+    font-family: sans-serif;
+    color:#b60112;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.content p{
+    font-size: 20px;
+    font-family: serif;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.content-section{
+    display: inline-flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*modifikasi tombol contact us*/
+/* .content-section .content .button{
+	margin-top: 30px;
+}
+.content-section .content .button a{
+	background-color: #3d3d3d;
+	padding:12px 40px;
+	text-decoration: none;
+	color:#fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover{
+	background-color: #a52a2a;
+	color:#fff;
+    
+} */
+/*tutup contact me*/
+
+
+/* tambahan footer */
+footer{
+    position: relative;
+    bottom: 0;
+    /* top: 100%; */
+    overflow: hidden;
+    /* left: 0;
+    right: 0; */
+    background: black;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    /* padding-top: 30px; */
+    padding: 30px 0;
+    color: #FFF;
+  
+   }
+  
+   .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   }
+  
+   .footer-content h3{
+    font-size: 1.8em;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 2.1em;
+    display: flex;
+    position: absolute;
+    /* position: relative; */
+    top: 0;
+    
+    
+   }
+  
+   .footer-content p{
+    max-width: 600px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    /* margin: 5px auto; */
+    /* line-height: 15px; */
+    font-size: 13px;
+    display: flex;
+    /* position: absolute; */
+    position: relative;
+    /* top: 28%; */
+   }
+  
+   .sosmed{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem 0.3rem 0rem 0.3rem;
+    /* position: absolute; */
+    position: relative;
+    top: 30%;
+    
+   }
+  
+   .sosmed li{
+    margin: 0 10px ;
+   }
+  
+   .sosmed a{
+    text-decoration: none;
+    color: #FFF;
+   }
+  
+   .sosmed a i{
+    font-size: 1.3em;
+    transition: color .4s ease;
+   }
+   .sosmed a:hover{
+    color: rgb(223, 154, 71);
+   }
+  
+   .footer-bottom{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px; 
+    
+   }
+  
+   .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+   }
+  
+   .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+   }
+
+
+
+@media screen and (max-width: 768px){
+.image-section{
+    width: 100%;
+    float: none; 
+} 
+
+.content{
+    width:100%;
+    float: none;
+    margin-left: 0px;
+}
+ 
+.content h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.content h2{
+    font-style: 30px;
+}
+
+.content p{
+    font-size: 18px;
+}
+ 
+}
